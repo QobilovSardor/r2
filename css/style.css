@@ -264,7 +264,6 @@ body {
   transform: translateX(-50%);
 }
 .hero-title__img {
-  width: 107rem;
   mask-image: radial-gradient(circle, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
 }
 
@@ -469,6 +468,11 @@ img {
 @media (max-width: 1920px) {
   .header .nav {
     justify-content: end;
+  }
+}
+@media (min-width: 1920px) {
+  .hero-title__img {
+    width: 107rem;
   }
 }
 

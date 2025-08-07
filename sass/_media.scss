@@ -5,3 +5,13 @@
     }
   }
 }
+
+@media (min-width: 1920px) {
+  .hero {
+    &-title {
+      &__img {
+        width: 107rem;
+      }
+    }
+  }
+}
