@@ -1,0 +1,362 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+span {
+  display: inline-block;
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: url(../images/header-bg.png) no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 56px 14px 56px;
+}
+.header .nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  gap: 33px;
+}
+.header .nav-list {
+  display: flex;
+}
+.header .nav-item {
+  display: flex;
+  gap: 33px;
+  align-items: center;
+  padding-right: 11px;
+}
+.header .nav-item.last-item {
+  padding: 0 0 0 7px;
+}
+.header .nav-item.last-item .nav-link .coming-soon__img {
+  margin-top: 0;
+}
+.header .nav-link {
+  text-align: center;
+  height: fit-content;
+}
+.header .nav-link img {
+  margin-inline: auto;
+  display: block;
+}
+.header .nav-link .coming-soon__img {
+  margin-top: 15px;
+}
+.header .language {
+  display: flex;
+}
+
+.footer {
+  position: relative;
+  background: url(../../images/footer-bg.jpg) no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-smoke {
+  position: absolute;
+  top: -96px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2823px;
+  object-fit: fill;
+  z-index: 10;
+  height: 15rem;
+}
+.footer-content {
+  background: url(../../images/footer-banner.png) no-repeat;
+  background-size: 100% 100%;
+  max-width: 1258px;
+  width: 100%;
+  margin: 0 auto;
+  height: 704px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  padding-bottom: 40px;
+  position: relative;
+}
+.footer-content__top-img {
+  position: absolute;
+  top: -66px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.footer-content a {
+  margin-top: 29px;
+}
+
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../../images/hero-bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+.hero .heros {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.hero .heros-img {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+.hero .heros .star-light {
+  margin: 0 auto;
+  display: block;
+}
+.hero .heros .star-light.small {
+  transform: translateY(142px);
+}
+.hero .heros .star-light.big {
+  width: 524px;
+  height: 108px;
+  aspect-ratio: 131/27;
+  transform: translateY(-168px);
+}
+.hero-title {
+  position: absolute;
+  bottom: -75px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero-title__img {
+  mask-image: radial-gradient(circle, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
+}
+
+.about-game {
+  position: relative;
+  background: url(../../images/about-game-bg.jpg) no-repeat center center;
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  padding: 0 90px 0 0;
+  z-index: 10;
+  display: flex;
+}
+.about-game-smoke__img {
+  position: absolute;
+  top: -140px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2823px;
+  height: 66px;
+  object-fit: fill;
+  z-index: 10;
+  height: 20rem;
+}
+.about-game-smoke__img.bottom {
+  top: unset;
+  bottom: -160px;
+}
+.about-game .knight-img {
+  margin-top: 50px;
+}
+.about-game__content {
+  background: url(../../images/frame-bg.png) no-repeat;
+  background-size: 100% 100%;
+  width: 993px;
+  height: 988px;
+  margin-left: auto;
+  z-index: 30;
+  position: relative;
+  margin: 97px 0 43px auto;
+  padding: 78px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-game__content .frame-btn__img,
+.about-game__content .war-img {
+  margin: 0 auto;
+  display: block;
+}
+
+.war-info {
+  background: url(../../images/war-info-bg-sec.png) no-repeat center center;
+  background-size: cover;
+  padding-top: 123px;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 80px;
+}
+.war-info .container {
+  margin-left: 64px;
+}
+.war-info__title {
+  margin-left: 40px;
+}
+.war-info__content {
+  background: url(../../images/war-info-bg.png) no-repeat center center;
+  background-size: 100% 100%;
+  padding: 161px 50px 40px 50px;
+  width: fit-content;
+}
+.war-info__heros {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.character {
+  position: relative;
+  background: url(../../images/character-bg.jpg) no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+  padding-top: 136px;
+  padding-bottom: 30px;
+}
+.character-smoke {
+  position: absolute;
+  top: -140px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2823px;
+  object-fit: fill;
+  z-index: 10;
+  height: 20rem;
+}
+.character-knight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.character-lists {
+  display: flex;
+  gap: 30px;
+  width: fit-content;
+  margin-left: auto;
+}
+.character-list {
+  text-align: center;
+  max-width: 721px;
+  padding-bottom: 106px;
+}
+.character-list img {
+  display: block;
+  margin-inline: auto;
+}
+.character-list .characters-img {
+  display: block;
+  margin: 21px auto 67px auto;
+}
+.character-list__right {
+  max-width: 633px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.character-list__right > div {
+  width: fit-content;
+}
+.character-list__right .title-box {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.character-table {
+  width: 604px;
+  height: 447px;
+}
+
+.select-war {
+  position: relative;
+  background: url(../../images/select-war-bg.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 128px;
+  padding-left: 123px;
+  padding-bottom: 20px;
+}
+.select-war__knight {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.select-war__smoke {
+  position: absolute;
+  top: -96px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2823px;
+  object-fit: fill;
+  z-index: 10;
+  height: 15rem;
+}
+.select-war__content {
+  display: flex;
+  gap: 81px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1289px;
+}
+.select-war__content img {
+  display: block;
+}
+.select-war__content .number-title {
+  width: 522px;
+}
+.select-war__content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+.select-war__content-box img {
+  margin: 0 auto;
+  display: block;
+}
+.select-war__content-box .img-box {
+  background: url(../../images/select-war-img-bg.png) no-repeat;
+  background-size: 100% 100%;
+  width: 604px;
+  height: 447px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1920px) {
+  .header .nav {
+    justify-content: end;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

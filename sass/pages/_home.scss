@@ -1,0 +1,252 @@
+// hero-section start
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../../images/hero-bg.jpg) no-repeat center center;
+  background-size: cover;
+  .heros {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    &-img {
+      margin: 0 auto;
+      display: block;
+      width: 100%;
+    }
+    .star-light {
+      margin: 0 auto;
+      display: block;
+      &.small {
+        transform: translateY(142px);
+      }
+      &.big {
+        width: 524px;
+        height: 108px;
+        aspect-ratio: 131/27;
+        transform: translateY(-168px);
+      }
+    }
+  }
+  &-title {
+    position: absolute;
+    bottom: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+    &__img {
+      mask-image: radial-gradient(circle, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+    }
+  }
+}
+// hero-section end
+
+// about-game start
+.about-game {
+  position: relative;
+  background: url(../../images/about-game-bg.jpg) no-repeat center center;
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  padding: 0 90px 0 0;
+  z-index: 10;
+  display: flex;
+  &-smoke__img {
+    position: absolute;
+    top: -140px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2823px;
+    height: 66px;
+    object-fit: fill;
+    z-index: 10;
+    height: 20rem;
+    &.bottom {
+      top: unset;
+      bottom: -160px;
+    }
+  }
+  .knight-img {
+    margin-top: 50px;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // z-index: 1;
+  }
+  &__content {
+    background: url(../../images/frame-bg.png) no-repeat;
+    background-size: 100% 100%;
+    width: 993px;
+    height: 988px;
+    margin-left: auto;
+    z-index: 30;
+    position: relative;
+    margin: 97px 0 43px auto;
+    padding: 78px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .frame-btn__img,
+    .war-img {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
+// about-game end
+
+// war-info start
+.war-info {
+  background: url(../../images/war-info-bg-sec.png) no-repeat center center;
+  background-size: cover;
+  padding-top: 123px;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 80px;
+  .container {
+    margin-left: 64px;
+  }
+  &__title {
+    margin-left: 40px;
+  }
+  &__content {
+    background: url(../../images/war-info-bg.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 161px 50px 40px 50px;
+    width: fit-content;
+  }
+  &__heros {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+// war-info end
+
+//character start
+.character {
+  position: relative;
+  background: url(../../images/character-bg.jpg) no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+  padding-top: 136px;
+  padding-bottom: 30px;
+  &-smoke {
+    position: absolute;
+    top: -140px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2823px;
+    object-fit: fill;
+    z-index: 10;
+    height: 20rem;
+  }
+  &-knight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &-lists {
+    display: flex;
+    gap: 30px;
+    width: fit-content;
+    margin-left: auto;
+  }
+  &-list {
+    text-align: center;
+    max-width: 721px;
+    padding-bottom: 106px;
+    img {
+      display: block;
+      margin-inline: auto;
+    }
+    .characters-img {
+      display: block;
+      margin: 21px auto 67px auto;
+    }
+  }
+  &-list__right {
+    max-width: 633px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & > div {
+      width: fit-content;
+    }
+    .title-box {
+      display: flex;
+      flex-direction: column;
+      gap: 17px;
+    }
+  }
+  &-table {
+    width: 604px;
+    height: 447px;
+  }
+}
+// character end
+
+//select-war start
+.select-war {
+  position: relative;
+  background: url(../../images/select-war-bg.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 128px;
+  padding-left: 123px;
+  padding-bottom: 20px;
+  &__knight {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  &__smoke {
+    position: absolute;
+    top: -96px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2823px;
+    object-fit: fill;
+    z-index: 10;
+    height: 15rem;
+  }
+  &__content {
+    display: flex;
+    gap: 81px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1289px;
+
+    img {
+      display: block;
+    }
+    .number-title {
+      width: 522px;
+    }
+    &-box {
+      display: flex;
+      flex-direction: column;
+      gap: 23px;
+      img {
+        margin: 0 auto;
+        display: block;
+      }
+      .img-box {
+        background: url(../../images/select-war-img-bg.png) no-repeat;
+        background-size: 100% 100%;
+        width: 604px;
+        height: 447px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+// select-war end
