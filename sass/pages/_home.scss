@@ -12,7 +12,7 @@
     position: relative;
     width: 100%;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 3.125rem;
     &-img {
       margin: 0 auto;
       display: block;
@@ -22,19 +22,19 @@
       margin: 0 auto;
       display: block;
       &.small {
-        transform: translateY(142px);
+        transform: translateY(8.875rem);
       }
       &.big {
-        width: 524px;
-        height: 108px;
+        width: 32.75rem;
+        height: 6.75rem;
         aspect-ratio: 131/27;
-        transform: translateY(-168px);
+        transform: translateY(-10.5rem);
       }
     }
   }
   &-title {
     position: absolute;
-    bottom: -75px;
+    bottom: -4.6875rem;
     left: 50%;
     transform: translateX(-50%);
     &__img {
@@ -53,26 +53,26 @@
   align-items: center;
   justify-content: center;
   background-size: cover;
-  padding: 0 90px 0 0;
+  padding: 0 5.625rem 0 0;
   z-index: 10;
   display: flex;
   &-smoke__img {
     position: absolute;
-    top: -140px;
+    top: -8.75rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 2823px;
-    height: 66px;
+    width: 176.4375rem;
+    height: 4.125rem;
     object-fit: fill;
     z-index: 10;
-    height: 20rem;
+    height: 320px;
     &.bottom {
       top: unset;
-      bottom: -160px;
+      bottom: -10rem;
     }
   }
   .knight-img {
-    margin-top: 50px;
+    margin-top: 3.125rem;
     // position: absolute;
     // top: 0;
     // left: 0;
@@ -81,16 +81,16 @@
   &__content {
     background: url(../../images/frame-bg.png) no-repeat;
     background-size: 100% 100%;
-    width: 993px;
-    height: 988px;
+    width: 62.0625rem;
+    height: 61.75rem;
     margin-left: auto;
     z-index: 30;
     position: relative;
-    margin: 97px 0 43px auto;
-    padding: 78px 0;
+    margin: 6.0625rem 0 2.6875rem auto;
+    padding: 4.875rem 0;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
     .frame-btn__img,
     .war-img {
       margin: 0 auto;
@@ -104,20 +104,20 @@
 .war-info {
   background: url(../../images/war-info-bg-sec.png) no-repeat center center;
   background-size: cover;
-  padding-top: 123px;
+  padding-top: 7.6875rem;
   position: relative;
   z-index: 1;
-  padding-bottom: 80px;
+  padding-bottom: 5rem;
   .container {
-    margin-left: 64px;
+    margin-left: 4rem;
   }
   &__title {
-    margin-left: 40px;
+    margin-left: 2.5rem;
   }
   &__content {
     background: url(../../images/war-info-bg.png) no-repeat center center;
     background-size: 100% 100%;
-    padding: 161px 50px 40px 50px;
+    padding: 10.0625rem 3.125rem 2.5rem 3.125rem;
     width: fit-content;
   }
   &__heros {
@@ -135,17 +135,17 @@
   background: url(../../images/character-bg.jpg) no-repeat center center;
   background-size: cover;
   z-index: 1;
-  padding-top: 136px;
-  padding-bottom: 30px;
+  padding-top: 8.5rem;
+  padding-bottom: 1.875rem;
   &-smoke {
     position: absolute;
-    top: -140px;
+    top: -8.75rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 2823px;
+    width: 176.4375rem;
     object-fit: fill;
     z-index: 10;
-    height: 20rem;
+    height: 320px;
   }
   &-knight {
     position: absolute;
@@ -155,25 +155,25 @@
   }
   &-lists {
     display: flex;
-    gap: 30px;
+    gap: 1.875rem;
     width: fit-content;
     margin-left: auto;
   }
   &-list {
     text-align: center;
-    max-width: 721px;
-    padding-bottom: 106px;
+    max-width: 45.0625rem;
+    padding-bottom: 6.625rem;
     img {
       display: block;
       margin-inline: auto;
     }
     .characters-img {
       display: block;
-      margin: 21px auto 67px auto;
+      margin: 1.3125rem auto 4.1875rem auto;
     }
   }
   &-list__right {
-    max-width: 633px;
+    max-width: 39.5625rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -183,12 +183,12 @@
     .title-box {
       display: flex;
       flex-direction: column;
-      gap: 17px;
+      gap: 1.0625rem;
     }
   }
   &-table {
-    width: 604px;
-    height: 447px;
+    width: 37.75rem;
+    height: 27.9375rem;
   }
 }
 // character end
@@ -198,9 +198,9 @@
   position: relative;
   background: url(../../images/select-war-bg.jpg) no-repeat center center;
   background-size: cover;
-  padding-top: 128px;
-  padding-left: 123px;
-  padding-bottom: 20px;
+  padding-top: 8rem;
+  padding-left: 7.6875rem;
+  padding-bottom: 1.25rem;
   &__knight {
     position: absolute;
     bottom: 0;
@@ -208,31 +208,31 @@
   }
   &__smoke {
     position: absolute;
-    top: -96px;
+    top: -6rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 2823px;
+    width: 176.4375rem;
     object-fit: fill;
     z-index: 10;
-    height: 15rem;
+    height: 240px;
   }
   &__content {
     display: flex;
-    gap: 81px;
+    gap: 5.0625rem;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1289px;
+    max-width: 80.5625rem;
 
     img {
       display: block;
     }
     .number-title {
-      width: 522px;
+      width: 32.625rem;
     }
     &-box {
       display: flex;
       flex-direction: column;
-      gap: 23px;
+      gap: 1.4375rem;
       img {
         margin: 0 auto;
         display: block;
@@ -240,8 +240,8 @@
       .img-box {
         background: url(../../images/select-war-img-bg.png) no-repeat;
         background-size: 100% 100%;
-        width: 604px;
-        height: 447px;
+        width: 37.75rem;
+        height: 27.9375rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -250,3 +250,7 @@
   }
 }
 // select-war end
+
+img {
+  max-width: none !important;
+}

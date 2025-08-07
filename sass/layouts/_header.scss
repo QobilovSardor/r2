@@ -8,24 +8,24 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 56px 14px 56px;
+  padding: 0.875rem 3.5rem 0.875rem 3.5rem;
 
   .nav {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: center;
-    gap: 33px;
+    gap: 2.0625rem;
     &-list {
       display: flex;
     }
     &-item {
       display: flex;
-      gap: 33px;
+      gap: 2.0625rem;
       align-items: center;
-      padding-right: 11px;
+      padding-right: 0.6875rem;
       &.last-item {
-        padding: 0 0 0 7px;
+        padding: 0 0 0 0.4375rem;
         .nav-link {
           .coming-soon__img {
             margin-top: 0;
@@ -41,7 +41,7 @@
         display: block;
       }
       .coming-soon__img {
-        margin-top: 15px;
+        margin-top: 0.9375rem;
       }
     }
   }
@@ -49,3 +49,4 @@
     display: flex;
   }
 }
+

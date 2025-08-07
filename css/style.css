@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -22,6 +23,35 @@ body {
   overflow: hidden;
 }
 
+/* Default - 1920px */
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+
+/* 1921px – 2559px */
+@media (min-width: 1921px) and (max-width: 2559px) {
+  html {
+    font-size: 18px; /* 1rem = 18px */
+  }
+}
+/* 2560px – 3199px */
+@media (min-width: 2560px) and (max-width: 3199px) {
+  html {
+    font-size: 20px; /* 1rem = 20px */
+  }
+}
+/* 3200px – 3839px */
+@media (min-width: 3200px) and (max-width: 3839px) {
+  html {
+    font-size: 22px; /* 1rem = 22px */
+  }
+}
+/* 3840px – 4000px */
+@media (min-width: 3840px) {
+  html {
+    font-size: 24px; /* 1rem = 24px */
+  }
+}
 .header {
   position: absolute;
   top: 0;
@@ -33,26 +63,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 56px 14px 56px;
+  padding: 0.875rem 3.5rem 0.875rem 3.5rem;
 }
 .header .nav {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: center;
-  gap: 33px;
+  gap: 2.0625rem;
 }
 .header .nav-list {
   display: flex;
 }
 .header .nav-item {
   display: flex;
-  gap: 33px;
+  gap: 2.0625rem;
   align-items: center;
-  padding-right: 11px;
+  padding-right: 0.6875rem;
 }
 .header .nav-item.last-item {
-  padding: 0 0 0 7px;
+  padding: 0 0 0 0.4375rem;
 }
 .header .nav-item.last-item .nav-link .coming-soon__img {
   margin-top: 0;
@@ -66,7 +96,7 @@ body {
   display: block;
 }
 .header .nav-link .coming-soon__img {
-  margin-top: 15px;
+  margin-top: 0.9375rem;
 }
 .header .language {
   display: flex;
@@ -83,36 +113,36 @@ body {
 }
 .footer-smoke {
   position: absolute;
-  top: -96px;
+  top: -6rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 2823px;
+  width: 176.4375rem;
   object-fit: fill;
   z-index: 10;
-  height: 15rem;
+  height: 240px;
 }
 .footer-content {
   background: url(../../images/footer-banner.png) no-repeat;
   background-size: 100% 100%;
-  max-width: 1258px;
+  max-width: 78.625rem;
   width: 100%;
   margin: 0 auto;
-  height: 704px;
+  height: 44rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: end;
-  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
   position: relative;
 }
 .footer-content__top-img {
   position: absolute;
-  top: -66px;
+  top: -4.125rem;
   left: 50%;
   transform: translateX(-50%);
 }
 .footer-content a {
-  margin-top: 29px;
+  margin-top: 1.8125rem;
 }
 
 .hero {
@@ -129,7 +159,7 @@ body {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 3.125rem;
 }
 .hero .heros-img {
   margin: 0 auto;
@@ -141,17 +171,17 @@ body {
   display: block;
 }
 .hero .heros .star-light.small {
-  transform: translateY(142px);
+  transform: translateY(8.875rem);
 }
 .hero .heros .star-light.big {
-  width: 524px;
-  height: 108px;
+  width: 32.75rem;
+  height: 6.75rem;
   aspect-ratio: 131/27;
-  transform: translateY(-168px);
+  transform: translateY(-10.5rem);
 }
 .hero-title {
   position: absolute;
-  bottom: -75px;
+  bottom: -4.6875rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -167,41 +197,41 @@ body {
   align-items: center;
   justify-content: center;
   background-size: cover;
-  padding: 0 90px 0 0;
+  padding: 0 5.625rem 0 0;
   z-index: 10;
   display: flex;
 }
 .about-game-smoke__img {
   position: absolute;
-  top: -140px;
+  top: -8.75rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 2823px;
-  height: 66px;
+  width: 176.4375rem;
+  height: 4.125rem;
   object-fit: fill;
   z-index: 10;
-  height: 20rem;
+  height: 320px;
 }
 .about-game-smoke__img.bottom {
   top: unset;
-  bottom: -160px;
+  bottom: -10rem;
 }
 .about-game .knight-img {
-  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 .about-game__content {
   background: url(../../images/frame-bg.png) no-repeat;
   background-size: 100% 100%;
-  width: 993px;
-  height: 988px;
+  width: 62.0625rem;
+  height: 61.75rem;
   margin-left: auto;
   z-index: 30;
   position: relative;
-  margin: 97px 0 43px auto;
-  padding: 78px 0;
+  margin: 6.0625rem 0 2.6875rem auto;
+  padding: 4.875rem 0;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
 }
 .about-game__content .frame-btn__img,
 .about-game__content .war-img {
@@ -212,21 +242,21 @@ body {
 .war-info {
   background: url(../../images/war-info-bg-sec.png) no-repeat center center;
   background-size: cover;
-  padding-top: 123px;
+  padding-top: 7.6875rem;
   position: relative;
   z-index: 1;
-  padding-bottom: 80px;
+  padding-bottom: 5rem;
 }
 .war-info .container {
-  margin-left: 64px;
+  margin-left: 4rem;
 }
 .war-info__title {
-  margin-left: 40px;
+  margin-left: 2.5rem;
 }
 .war-info__content {
   background: url(../../images/war-info-bg.png) no-repeat center center;
   background-size: 100% 100%;
-  padding: 161px 50px 40px 50px;
+  padding: 10.0625rem 3.125rem 2.5rem 3.125rem;
   width: fit-content;
 }
 .war-info__heros {
@@ -241,18 +271,18 @@ body {
   background: url(../../images/character-bg.jpg) no-repeat center center;
   background-size: cover;
   z-index: 1;
-  padding-top: 136px;
-  padding-bottom: 30px;
+  padding-top: 8.5rem;
+  padding-bottom: 1.875rem;
 }
 .character-smoke {
   position: absolute;
-  top: -140px;
+  top: -8.75rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 2823px;
+  width: 176.4375rem;
   object-fit: fill;
   z-index: 10;
-  height: 20rem;
+  height: 320px;
 }
 .character-knight {
   position: absolute;
@@ -262,14 +292,14 @@ body {
 }
 .character-lists {
   display: flex;
-  gap: 30px;
+  gap: 1.875rem;
   width: fit-content;
   margin-left: auto;
 }
 .character-list {
   text-align: center;
-  max-width: 721px;
-  padding-bottom: 106px;
+  max-width: 45.0625rem;
+  padding-bottom: 6.625rem;
 }
 .character-list img {
   display: block;
@@ -277,10 +307,10 @@ body {
 }
 .character-list .characters-img {
   display: block;
-  margin: 21px auto 67px auto;
+  margin: 1.3125rem auto 4.1875rem auto;
 }
 .character-list__right {
-  max-width: 633px;
+  max-width: 39.5625rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -291,20 +321,20 @@ body {
 .character-list__right .title-box {
   display: flex;
   flex-direction: column;
-  gap: 17px;
+  gap: 1.0625rem;
 }
 .character-table {
-  width: 604px;
-  height: 447px;
+  width: 37.75rem;
+  height: 27.9375rem;
 }
 
 .select-war {
   position: relative;
   background: url(../../images/select-war-bg.jpg) no-repeat center center;
   background-size: cover;
-  padding-top: 128px;
-  padding-left: 123px;
-  padding-bottom: 20px;
+  padding-top: 8rem;
+  padding-left: 7.6875rem;
+  padding-bottom: 1.25rem;
 }
 .select-war__knight {
   position: absolute;
@@ -313,31 +343,31 @@ body {
 }
 .select-war__smoke {
   position: absolute;
-  top: -96px;
+  top: -6rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 2823px;
+  width: 176.4375rem;
   object-fit: fill;
   z-index: 10;
-  height: 15rem;
+  height: 240px;
 }
 .select-war__content {
   display: flex;
-  gap: 81px;
+  gap: 5.0625rem;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1289px;
+  max-width: 80.5625rem;
 }
 .select-war__content img {
   display: block;
 }
 .select-war__content .number-title {
-  width: 522px;
+  width: 32.625rem;
 }
 .select-war__content-box {
   display: flex;
   flex-direction: column;
-  gap: 23px;
+  gap: 1.4375rem;
 }
 .select-war__content-box img {
   margin: 0 auto;
@@ -346,11 +376,15 @@ body {
 .select-war__content-box .img-box {
   background: url(../../images/select-war-img-bg.png) no-repeat;
   background-size: 100% 100%;
-  width: 604px;
-  height: 447px;
+  width: 37.75rem;
+  height: 27.9375rem;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+img {
+  max-width: none !important;
 }
 
 @media (max-width: 1920px) {

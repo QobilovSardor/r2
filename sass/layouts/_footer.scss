@@ -8,35 +8,35 @@
   justify-content: center;
   &-smoke {
     position: absolute;
-    top: -96px;
+    top: -6rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 2823px;
+    width: 176.4375rem;
     object-fit: fill;
     z-index: 10;
-    height: 15rem;
+    height: 240px;
   }
   &-content {
     background: url(../../images/footer-banner.png) no-repeat;
     background-size: 100% 100%;
-    max-width: 1258px;
+    max-width: 78.625rem;
     width: 100%;
     margin: 0 auto;
-    height: 704px;
+    height: 44rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
     position: relative;
     &__top-img {
       position: absolute;
-      top: -66px;
+      top: -4.125rem;
       left: 50%;
       transform: translateX(-50%);
     }
     a {
-      margin-top: 29px;
+      margin-top: 1.8125rem;
     }
   }
 }
